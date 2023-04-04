@@ -2,7 +2,7 @@ import Link from "next/link"
 export default function Footer(){
     return(
         <div className="pt-20  text-black w-full text-sm">
-           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 px-20 justify-between">
+           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 px-8 md:px-20 justify-between">
             {/* Useful Links */}
             <div className="flex flex-col justify-between">
                 <Link href="/" className="hover:text-amber-700 ease-in duration-700">Home</Link>
