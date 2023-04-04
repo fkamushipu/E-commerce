@@ -59,8 +59,8 @@ export default function Footer(){
 
            {/* Copyright */}
            <div>
-            <div class="container mx-auto  py-4 my-8 border-t">
-                    <p class="text-center">&copy; Copyright 2023 
+            <div className="container mx-auto  py-4 my-8 border-t">
+                    <p className="text-center">&copy; Copyright 2023 
                     Feni Kamushipu | All rights reserved.</p>
                 </div>
            </div>

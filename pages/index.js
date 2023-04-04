@@ -17,12 +17,12 @@ const Home = () => {
       <div className=''>
 
         {/* Hero Image */}
-        <div className="relative mx-10 md:mx-20 mb-10 md:mb-20">
+        <div className="relative sm:mx-4 md:mx-20 mb-10 md:mb-20">
           <div className=' h-full md:h-96 overflow-hidden bg-neutral-800'>
            <Image src={coverImage} className="h-auto w-full opacity-60 "></Image>
           </div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  flex-col ">
-            <div className="font-bold text-4xl text-center text-white">
+            <div className="font-bold xs:text-xl sm:text-2xl md:text-4xl text-center text-white">
               <span>New Outerwear <br></br>Collection</span>
             </div>
             <div className="flex justify-center w-full">
@@ -34,11 +34,11 @@ const Home = () => {
 {/* Gray section */}
         <div className="bg-neutral-100 w-full py-12 justify-center ">
           <div className="text-center pb-10 ">
-            <h3 className="text-3xl font-semibold uppercase tracking-wide">Newest Products</h3>
+            <h3 className="xs:text-xl md:text-3xl font-semibold uppercase tracking-wide">Newest Products</h3>
           </div>
           <div className="justify-around mx-10 md:mx-20  flex grid sm:grid-cols-2 md:grid-cols-3 gap-6">
             <div className="bg-white p-2 " >
-              <div className="h-64 overflow-hidden bg-neutral-100 ">
+              <div className="sm:h-48 md:h-64 overflow-hidden bg-neutral-100 ">
                 <Image src={Product3} className="h-auto w-full"></Image>
               </div>
               <div className="py-4 text-center">
@@ -47,7 +47,7 @@ const Home = () => {
               </div>
             </div>
             <div className="bg-white p-2 " >
-              <div className="h-64  overflow-hidden bg-neutral-100 ">
+              <div className="sm:h-48 md:h-64   overflow-hidden bg-neutral-100 ">
                 <Image src={Product2} className="h-auto w-full"></Image>
               </div>
               <div className="py-4 text-center">
@@ -56,7 +56,7 @@ const Home = () => {
               </div>
             </div>
             <div className="bg-white p-2 " >
-              <div className="h-64 overflow-hidden bg-neutral-100 ">
+              <div className="sm:h-48 md:h-64  overflow-hidden bg-neutral-100 ">
                 <Image src={Product3} className="h-auto w-full"></Image>
               </div>
               <div className="py-4 text-center">
@@ -71,14 +71,14 @@ const Home = () => {
         </div>
 
         {/* 2 Gallery Section */}
-        <div className="px-20 pt-20">
-         <div className="grid md:grid-cols-2 gap-6 font-bold text-2xl md:text-4xl lg:text-5xl">
-          <div className="relative h-72 overflow-hidden">
+        <div className="px-10 md:px-20 pt-20">
+         <div className="grid md:grid-cols-2 gap-6 font-bold text-xl md:text-4xl lg:text-5xl">
+          <div className="relative h-full md:h-72 overflow-hidden">
             <div className=" bg-neutral-800 "><Image src={Cover1} className="w-auto h-full opacity-80 hover:opacity-60 hover:scale-110 duration-700 ease-in "></Image></div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">Our Story</div>
           </div>
 
-          <div className="relative h-72 overflow-hidden">
+          <div className="relative h-full md:h-72 overflow-hidden">
             <div className=" bg-neutral-800 "><Image src={Cover3} className="w-auto h-full opacity-80 hover:opacity-60 hover:scale-110 duration-700 ease-in "></Image></div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">Our Blog</div>
           </div>
@@ -86,19 +86,19 @@ const Home = () => {
         </div>
 
         {/* 3 Gallery Section */}
-        <div className="px-20 py-10">
-         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 font-bold text-xl">
-          <div className="relative h-64 overflow-hidden  ">
+        <div className="px-4 md:px-20 py-10">
+         <div className="grid xs:grid-cols-2 md:grid-cols-3 gap-6 font-bold text-lg">
+          <div className="relative xs:h-full md:h-64 overflow-hidden  ">
             <div className="h-full bg-neutral-800  "><Image src={Cover2} className="w-auto h-full hover:opacity-40 duration-700 ease-in"></Image></div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-white">Accesories</div>
           </div>
 
-          <div className="relative h-64 overflow-hidden  ">
+          <div className="relative xs:h-full md:h-64 overflow-hidden  ">
             <div className="h-full bg-neutral-800  "><Image src={Cover2} className="w-auto h-full hover:opacity-40 duration-700 ease-in"></Image></div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-white">Tops</div>
           </div>
 
-          <div className="relative h-64 overflow-hidden  ">
+          <div className="relative xs:h-full md:h-64 overflow-hidden  ">
             <div className="h-full bg-neutral-800  "><Image src={Cover2} className="w-auto h-full hover:opacity-40 duration-700 ease-in"></Image></div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-white">Bags</div>
           </div>
@@ -110,11 +110,11 @@ const Home = () => {
         {/* Featured Products List  */}
         <div className="bg-neutral-100 w-full pt-12 justify-center ">
           <div className="text-center pb-10 ">
-            <h3 className="text-3xl font-semibold uppercase tracking-wide">Featured Products</h3>
+            <h3 className="xs:text-xl md:text-3xl font-semibold uppercase tracking-wide">Featured Products</h3>
           </div>
-          <div className="justify-around px-24 flex grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="justify-around px-6 md:px-24 flex grid sm:grid-cols-2 md:grid-cols-3 gap-8">
             <div className="bg-white p-2 " >
-              <div className="h-64 bg-neutral-300 overflow-hidden  ">
+              <div className="h-52 md:h-64 bg-neutral-300 overflow-hidden  ">
                 <Image src={Model2} className="h-auto w-full"></Image>
               </div>
               <div className="py-4 text-center">
@@ -123,7 +123,7 @@ const Home = () => {
               </div>
             </div>
             <div className="bg-white p-2 " >
-              <div className="h-64 bg-neutral-300 overflow-hidden  ">
+              <div className="h-52 md:h-64 bg-neutral-300 overflow-hidden  ">
                 <Image src={Model1} className="h-auto w-full "></Image>
               </div>
               <div className="py-4 text-center">
@@ -132,7 +132,7 @@ const Home = () => {
               </div>
             </div>
             <div className="bg-white p-2 " >
-              <div className="h-64 bg-neutral-300 overflow-hidden  ">
+              <div className="h-52 md:h-64 bg-neutral-300 overflow-hidden  ">
                 <Image src={Model2} className="h-auto w-full "></Image>
               </div>
               <div className="py-4 text-center">
@@ -141,7 +141,7 @@ const Home = () => {
               </div>
             </div>
             <div className="bg-white p-2 " >
-              <div className="h-64 overflow-hidden  ">
+              <div className="h-52 md:h-64 overflow-hidden  ">
                 <Image src={coverImage} className="h-auto w-full "></Image>
               </div>
               <div className="py-4 text-center">
@@ -150,7 +150,7 @@ const Home = () => {
               </div>
             </div>
             <div className="bg-white p-2 " >
-              <div className="h-64 overflow-hidden  ">
+              <div className="h-52 md:h-64 overflow-hidden  ">
                 <Image src={Cover2} className="h-auto w-full "></Image>
               </div>
               <div className="py-4 text-center">
@@ -159,7 +159,7 @@ const Home = () => {
               </div>
             </div>
             <div className="bg-white p-2 " >
-              <div className="h-64  overflow-hidden ">
+              <div className="h-52 md:h-64  overflow-hidden ">
                 <Image src={coverImage} className="h-auto w-full"></Image>
               </div>
               <div className="py-4 text-center">
