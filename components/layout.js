@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Navigation from "./Navigation";
+import Navigation from "./navigation";
 import Footer from "./footer";
 const Layouts = ({children}) => {
     return(
@@ -9,7 +9,7 @@ const Layouts = ({children}) => {
             {/* The tab header */}
             <Head>
                 <title>E commerce</title>
-                <link rel="icon" href="/tech-africa-white.svg" />
+                <link rel="icon" href="/vercel.svg" />
             </Head>
 
             {/* The page body */}

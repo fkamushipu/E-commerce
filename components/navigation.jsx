@@ -1,5 +1,5 @@
 import Link from "next/link";
-import logo from "../public/tech-africa-white.svg";
+import logo from "../public/vercel.svg";
 import Image from "next/image";
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
@@ -9,30 +9,35 @@ export default function Navigation (){
 
     return(
         <div className="">
-            <nav className=" w-full shadow-xl">
+            <nav className=" w-full ">
                 <div className="w-full">
-                    <div className="w-full h-20 flex items-center bg-gray-500">
-                        <div className="flex justify-around mx-20 w-full ">
+                    <div className="w-full h-auto flex items-center py-6">
+                        <div className="flex justify-between px-20 w-full ">
                             {/* The logo */}
-                            <div className="justify-center items-center flex-shrink-0">
-                                <Image src={logo} className="w-16 rounded-full "/>
+                            <div className=" flex justify-center items-center flex-shrink-0">
+                                {/* <Image src={logo} className="w-16 rounded-full "/> */}
+                                <div className="text-2xl tracking-wide uppercase font-bold font-sans">Shop Name</div>
                             </div>
                             {/* navigation links */}
                             <div className="hidden md:block ">
-                                <div className="ml-10 flex justify-between w-full space-x-4 py-2.5 items-center tracking-wider font-semibold sm:text-lg md:text-2xl">
+                                <div className="ml-10 flex justify-between w-full space-x-6  items-center tracking-wider ">
                                     {/* Use link not the anchor tag so the page don't have to reload evrytime you visit a different component or page */}
-                                    <Link href={"/"} ><button className="flex-1 hover:text-gray-800 px-8 border-r-2 border-b-yellow-400">Home</button></Link>
-                                    <Link href={"#Hero"}><button className="flex-1 hover:text-gray-800 px-8 border-r-2 border-b-yellow-400">Introduction</button></Link>
-                                    <Link href={"#Slider"} ><button className="flex-1 hover:text-gray-800 px-8 border-r-2 border-b-yellow-400">What we offer</button></Link>
-                                    <Link href={"#Services"}><button className="flex-1 hover:text-gray-800 px-8 border-r-2 border-b-yellow-400">Other services</button></Link>
-                                    <Link href={"#ContactForm"}><button className="flex-1 hover:text-gray-800 px-8 border-r-2 border-b-yellow-400">Contact Us</button></Link>
+                                    <Link href={"/"}  className="hover:text-amber-700 duration-700 ease-in">Home</Link>
+                                    <Link href={"/"}  className="hover:text-amber-700 duration-700 ease-in">Store</Link>
+                                    <Link href={"/"}  className="hover:text-amber-700 duration-700 ease-in">Blog</Link>
+                                    <Link href={"/"}  className="hover:text-amber-700 duration-700 ease-in">About</Link>
+                                    <Link href={"/"}  className="hover:text-amber-700 duration-700 ease-in">Point of Sale</Link>
+                                    {/* <Image></Image> */}
+                                    <div className="px-10 hover:color-amber-700 duration-700 ease-in">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2L3 6v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V6l-3-4H6zM3.8 6h16.4M16 10a4 4 0 1 1-8 0"/></svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         {/* Small screens responsive */}
                         <div className="mr-10 flex md:hidden ">
-                            <button onClick={() => setIsOpen(!isOpen)} type="button" className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-lg text-white  shadow-xl hover:bg-gray-700 focus:outline-none"
+                            <button onClick={() => setIsOpen(!isOpen)} type="button" className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-lg text-white   hover:bg-gray-700 focus:outline-none"
                             aria-controls="mobile-menu"
                             aria-expanded="false" >
                                 <span className="sr-only ">Open main menu</span>
@@ -69,12 +74,12 @@ export default function Navigation (){
                 leaveTo= "opacity-0 scale-95">
                     {(ref) => (
                         <div className="md:hidden " id="mobile-menu">
-                            <div ref={ref} className="bg-gray-600 px-4 sm:px-3 pt-2.5 pb-3 space-y-2 flex flex-col tracking-wider font-semibold text-lg ">
-                                <Link href={"/"} ><button className=" hover:text-gray-800 text-left w-full border-b-2 border-b-gray-300 ">Home</button></Link>
-                                <Link href={"#Hero"}><button className=" hover:text-gray-800 text-left w-full border-b-2 border-b-gray-300 ">Introduction</button></Link>
-                                <Link href={"#Slider"} ><button className=" hover:text-gray-800 text-left w-full border-b-2 border-b-gray-300 ">What we offer</button></Link>
-                                <Link href={"#Services"} ><button className=" hover:text-gray-800 text-left w-full border-b-2 border-b-gray-300 ">Other Services</button></Link>
-                                <Link href={"#ContactForm"}><button className="hover:text-gray-800 text-left w-full border-b-2 border-b-gray-300 ">Contact Us</button></Link>
+                            <div ref={ref} className="bg-white px-20  py-8  space-y-4 flex flex-col tracking-wide font-semibold text-lg ">
+                            <Link href={"/"}  className="hover:text-amber-700 duration-700 ease-in">Home</Link>
+                                    <Link href={"/"}  className="hover:text-amber-700 duration-700 ease-in">Store</Link>
+                                    <Link href={"/"}  className="hover:text-amber-700 duration-700 ease-in">Blog</Link>
+                                    <Link href={"/"}  className="hover:text-amber-700 duration-700 ease-in">About</Link>
+                                    <Link href={"/"}  className="hover:text-amber-700 duration-700 ease-in">Point of Sale</Link>
                             
                             </div>
                         </div>

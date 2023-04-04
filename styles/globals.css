@@ -3,17 +3,6 @@
 @tailwind utilities;
 
 /* Hero section cover image */
-.cover-image1 {
-    background-image: url(../public/image1.png);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .cover-image2 {
-    background-image: url(../public/image5.jpg);
-    background-size: cover;
-    background-position: center;
-  }
 
   .para-1:first-child::first-letter {
     color: rgb(111, 110, 109);
